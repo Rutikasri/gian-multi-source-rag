@@ -1,0 +1,11 @@
+relationship_id,source_entity_id,source_entity_type,relationship_type,target_entity,target_entity_type,confidence,evidence_record,source,page
+REL-S1-001,S1-P2-02,person,developed/practices,tree-growing technique using one litre of water,innovation,high,S1-P2-02,51st Shodhyatra,4
+REL-S1-002,S1-P2-03,person,developed,thornless Khejri through grafting,innovation,high,S1-P2-03,51st Shodhyatra,4
+REL-S1-003,S1-P2-05,person,developed,sweet-potato varieties needing less water,innovation,high,S1-P2-05,51st Shodhyatra,4
+REL-S2-001,S2-P14-01,person,creates,traditional Bhili dolls and tribal toys,craft,high,S2-P14-01,53rd Shodhyatra Presentation,14
+REL-S2-002,S2-P15-01,person,promotes/preserves,Adivasi Gudiya craft,craft,high,S2-P15-01,53rd Shodhyatra Presentation,15-16
+REL-S2-003,S2-P18-01,person,develops,Pithora art as innovative business,initiative,high,S2-P18-01,53rd Shodhyatra Presentation,18
+REL-S2-004,S2-P25-01,person,creates,standing-use bamboo broom,product,high,S2-P25-01,53rd Shodhyatra Presentation,25
+REL-S2-005,S2-P54-01,person,developed,water-and-electricity welding machine,prototype,high,S2-P54-01,53rd Shodhyatra Presentation,54-55
+REL-S2-006,S2-P60-01,person,developed/tested,hand-operated Mahua seed-breaking machine,prototype,high,S2-P60-01,53rd Shodhyatra Presentation,60
+REL-S2-007,S2-P63-01,person,founded,free Soldier Physical Academy,initiative,high,S2-P63-01,53rd Shodhyatra Presentation,63
