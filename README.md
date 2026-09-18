@@ -241,17 +241,16 @@ This provides vector representations of the structured records for semantic simi
 
 ## 9. Vector Database
 
-The project uses:
+The project uses **ChromaDB** as the persistent vector database for storing
+the embedded knowledge records used during retrieval.
 
-```text
-ChromaDB
-```
+A **pre-built ChromaDB vector database is included in the GitHub repository**
+for independent evaluation.
 
-The persistent database is stored locally in:
+The persistent database is stored in:
 
 ```text
 chroma_db/
-```
 
 The collection name is:
 
@@ -268,6 +267,22 @@ The current database contains:
 --------------------------------
 703 total records
 ```
+### Loading the Pre-built Vector Database
+
+The included ChromaDB can be loaded directly without rebuilding it:
+
+```python
+import chromadb
+
+client = chromadb.PersistentClient(path="./chroma_db")
+collection = client.get_collection("gian_knowledge")
+
+print("Collection:", collection.name)
+print("Record count:", collection.count())
+```
+Expected output:
+Collection: gian_knowledge
+Record count: 703
 
 The ingestion script recreates the collection and performs sanity checks before completing.
 
@@ -662,7 +677,7 @@ The following principles were followed throughout the project:
 - Some source records contain missing fields.
 - Some source relationships are not explicitly stated and therefore are not inferred.
 - GIAN Nidhi is a web-based source and its displayed table structure required deduplication and limited structural cleaning.
-- The local ChromaDB is not a remotely shared database. It can be rebuilt using `ingest.py`.
+-  A pre-built ChromaDB is included in the GitHub repository for independent evaluation. It can also be rebuilt using `ingest.py`.
 - The quality of generated answers depends on the quality and coverage of retrieved evidence.
 - Semantic retrieval may return additional context for broad questions; explicit structured matching is used where a query contains identifiable GIAN Nidhi entities such as project IDs, project names, participants, or colleges.
 
