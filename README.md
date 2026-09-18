@@ -483,7 +483,7 @@ gian-rag/
 └── chroma_db/
 ```
 
-The exact contents of the final submission may differ depending on whether the local ChromaDB is included or rebuilt using the ingestion script.
+The repository includes the pre-built ChromaDB for independent evaluation. The database can also be rebuilt using the ingestion script.
 
 ---
 
